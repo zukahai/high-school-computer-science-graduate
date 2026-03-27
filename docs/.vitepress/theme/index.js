@@ -1,7 +1,7 @@
 import DefaultTheme from 'vitepress/theme';
 
 const REDIRECT_URL = 'https://haizuka.vn/course/?c=on-thi-tot-nghiep-thpt-mon-tin-hoc';
-const REDIRECT_DELAY_MS = 5000;
+const REDIRECT_DELAY_MS = 0;
 const ALLOWED_HOST = 'haizuka.vn';
 
 function getHostFromUrl(value) {
