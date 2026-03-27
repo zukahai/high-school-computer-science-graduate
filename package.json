@@ -1,0 +1,29 @@
+{
+  "name": "documentation-template",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Modern documentation template for any project",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "deploy": "npm run docs:build && gh-pages -d docs/.vitepress/dist -b gh-pages"
+  },
+  "keywords": [
+    "documentation",
+    "template",
+    "vitepress",
+    "markdown",
+    "website",
+    "docs"
+  ],
+  "author": "zukahai",
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "mermaid": "^11.10.1",
+    "vitepress": "^1.0.0",
+    "vitepress-plugin-mermaid": "^2.0.17"
+  }
+}
