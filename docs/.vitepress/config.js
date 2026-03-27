@@ -2,7 +2,7 @@ import { withMermaid } from "vitepress-plugin-mermaid";
 
 export default withMermaid({
   base: '/high-school-computer-science-graduate/',
-  title: 'Tài Liệu Ôn Thi Tin Học THPT',
+  title: 'Ôn thi tốt nghiệp tin học thpt | HaiZuka Academy',
   description: 'Tài liệu ôn thi môn Tin học THPT - Dành cho học sinh mất gốc',
   lang: 'vi-VN',
   ignoreDeadLinks: true,
