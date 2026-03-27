@@ -55,7 +55,7 @@ npm run deploy
 Sẽ chạy theo thứ tự:
 1. `docs:build` - Build VitePress
 2. `replace-assets` - Thay thế đường dẫn assets
-3. `gh-pages` - Deploy lên GitHub Pages
+3. `gh-pages` - Deploy trang tĩnh
 
 ## Tham số
 

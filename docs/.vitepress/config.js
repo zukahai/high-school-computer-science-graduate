@@ -50,8 +50,7 @@ export default withMermaid({
           { text: 'Chương 5: HTML & CSS', link: '/chuong-5/5.1-html-co-ban' },
           { text: 'Chương 6: Đạo đức & Nghề IT', link: '/chuong-6/6.1-van-hoa-mang' },
         ]
-      },
-      { text: 'GitHub', link: 'https://github.com/zukahai/high-school-computer-science-graduate' }
+      }
     ],
 
     sidebar: [
@@ -118,21 +117,11 @@ export default withMermaid({
       }
     ],
 
-    socialLinks: [
-      { 
-        icon: 'github', 
-        link: 'https://github.com/zukahai/high-school-computer-science-graduate' 
-      }
-    ],
+    socialLinks: [],
 
     footer: {
       message: 'Tài liệu ôn thi Tin học THPT - Dành cho học sinh mất gốc',
       copyright: 'Copyright © 2024'
-    },
-
-    editLink: {
-      pattern: 'https://github.com/zukahai/high-school-computer-science-graduate/edit/main/docs/:path',
-      text: 'Chỉnh sửa trang này trên GitHub'
     },
 
     lastUpdated: {

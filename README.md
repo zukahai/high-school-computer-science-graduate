@@ -15,7 +15,7 @@ A modern and flexible documentation template built with VitePress. Perfect for c
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/documentation-template.git
+   git clone <repository-url>
    cd documentation-template
    ```
 

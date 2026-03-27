@@ -9,9 +9,6 @@ hero:
     - theme: brand
       text: Bắt đầu học ngay
       link: /chuong-2/2.1-thiet-bi-mang
-    - theme: alt
-      text: Xem trên GitHub
-      link: https://github.com/zukahai/high-school-computer-science-graduate
 
 features:
   - icon: 🌐
