@@ -85,7 +85,10 @@ export default withMermaid({
         items: [
           { text: '4.1 – CSDL và DBMS', link: '/chuong-4/4.1-csld-dbms' },
           { text: '4.2 – Khóa chính & Khóa ngoại', link: '/chuong-4/4.2-khoa' },
-          { text: '4.3 – Câu lệnh SQL', link: '/chuong-4/4.3-sql' },
+          { text: '4.3 – Câu lệnh SQL cơ bản', link: '/chuong-4/4.3-sql' },
+          { text: '4.4 – DDL: Tạo và quản lý bảng', link: '/chuong-4/4.4-sql-ddl' },
+          { text: '4.5 – DML: Thêm, sửa, xóa dữ liệu', link: '/chuong-4/4.5-sql-dml' },
+          { text: '4.6 – SQL nâng cao: GROUP BY & JOIN', link: '/chuong-4/4.6-sql-nangcao' },
         ]
       },
       {
