@@ -103,6 +103,11 @@ export default withMermaid({
           { text: '5.1 – HTML cơ bản', link: '/chuong-5/5.1-html-co-ban' },
           { text: '5.2 – Bảng HTML', link: '/chuong-5/5.2-bang-html' },
           { text: '5.3 – CSS cơ bản', link: '/chuong-5/5.3-css-co-ban' },
+          { text: '5.4 – Liên kết và Hình ảnh', link: '/chuong-5/5.4-lien-ket-hinh-anh' },
+          { text: '5.5 – Form HTML', link: '/chuong-5/5.5-form-html' },
+          { text: '5.6 – Thẻ ngữ nghĩa HTML', link: '/chuong-5/5.6-the-ngu-nghia' },
+          { text: '5.7 – CSS Nâng Cao', link: '/chuong-5/5.7-css-nang-cao' },
+          { text: '5.8 – Ôn Tập Chương 5', link: '/chuong-5/5.8-on-tap' },
         ]
       },
       {
