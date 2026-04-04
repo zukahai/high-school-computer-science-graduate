@@ -82,6 +82,11 @@ export default withMermaid({
           { text: '3.1 – AI là gì?', link: '/chuong-3/3.1-ai-la-gi' },
           { text: '3.2 – Giới hạn của AI', link: '/chuong-3/3.2-gioi-han-ai' },
           { text: '3.3 – AI và Giáo dục', link: '/chuong-3/3.3-ai-giao-duc' },
+          { text: '3.4 – Học máy (Machine Learning)', link: '/chuong-3/3.4-hoc-may' },
+          { text: '3.5 – Ứng dụng AI trong cuộc sống', link: '/chuong-3/3.5-ung-dung-ai' },
+          { text: '3.6 – Đạo đức AI', link: '/chuong-3/3.6-dao-duc-ai' },
+          { text: '3.7 – AI và Xã hội', link: '/chuong-3/3.7-ai-xa-hoi' },
+          { text: '3.8 – Ôn tập Chương 3', link: '/chuong-3/3.8-on-tap' },
         ]
       },
       {
