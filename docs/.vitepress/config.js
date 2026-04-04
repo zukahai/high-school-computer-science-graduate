@@ -122,6 +122,12 @@ export default withMermaid({
           { text: '6.1 – Văn hóa mạng', link: '/chuong-6/6.1-van-hoa-mang' },
           { text: '6.2 – An toàn thông tin', link: '/chuong-6/6.2-an-toan-thong-tin' },
           { text: '6.3 – Nghề IT', link: '/chuong-6/6.3-nghe-it' },
+          { text: '6.4 – Luật An ninh mạng', link: '/chuong-6/6.4-luat-an-ninh-mang' },
+          { text: '6.5 – Bản quyền phần mềm', link: '/chuong-6/6.5-ban-quyen-phan-mem' },
+          { text: '6.6 – Quyền riêng tư số', link: '/chuong-6/6.6-quyen-rieng-tu' },
+          { text: '6.7 – Sức khỏe khi dùng máy tính', link: '/chuong-6/6.7-suc-khoe-may-tinh' },
+          { text: '6.8 – Tác động của CNTT đến xã hội', link: '/chuong-6/6.8-tac-dong-cntt' },
+          { text: '6.9 – Ôn tập Chương 6', link: '/chuong-6/6.9-on-tap' },
         ]
       },
       {
