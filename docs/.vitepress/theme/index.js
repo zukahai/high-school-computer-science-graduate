@@ -13,7 +13,14 @@ function getHostFromUrl(value) {
 }
 
 function isAllowedHost(hostname) {
-  return hostname === ALLOWED_HOST || hostname.endsWith(`.${ALLOWED_HOST}`);
+  // or local
+  return hostname === ALLOWED_HOST || hostname.endsWith(`.${ALLOWED_HOST}`) || hostname === 'localhost' || hostname.endsWith('.localhost') || hostname === '127.0.0.1' || hostname === '::1';
+}
+
+function isLocalRuntimeHost() {
+  if (typeof window === 'undefined') return false;
+  const hostname = window.location.hostname;
+  return hostname === 'localhost' || hostname.endsWith('.localhost') || hostname === '127.0.0.1' || hostname === '::1';
 }
 
 function getEmbeddingHost() {
@@ -30,6 +37,11 @@ function getEmbeddingHost() {
 
 function shouldRedirect() {
   if (typeof window === 'undefined') return false;
+
+  // Never redirect when running local/dev.
+  if (isLocalRuntimeHost()) {
+    return false;
+  }
 
   const inIframe = window.self !== window.top;
   if (!inIframe) {
