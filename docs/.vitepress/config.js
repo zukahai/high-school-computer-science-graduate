@@ -68,6 +68,11 @@ export default withMermaid({
           { text: '2.1 – Thiết bị mạng', link: '/chuong-2/2.1-thiet-bi-mang' },
           { text: '2.2 – TCP/IP', link: '/chuong-2/2.2-tcp-ip' },
           { text: '2.3 – LAN & Chia sẻ tài nguyên', link: '/chuong-2/2.3-lan' },
+          { text: '2.4 – Mô hình OSI', link: '/chuong-2/2.4-mo-hinh-osi' },
+          { text: '2.5 – Internet & Dịch vụ', link: '/chuong-2/2.5-internet-dich-vu' },
+          { text: '2.6 – Bảo mật mạng', link: '/chuong-2/2.6-bao-mat-mang' },
+          { text: '2.7 – Phân loại mạng', link: '/chuong-2/2.7-phan-loai-mang' },
+          { text: '2.8 – Ôn tập Chương 2', link: '/chuong-2/2.8-on-tap' },
         ]
       },
       {
