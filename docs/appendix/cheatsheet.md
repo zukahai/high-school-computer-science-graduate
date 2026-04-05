@@ -411,7 +411,7 @@ margin: 20px;               /* Khoảng cách bên ngoài */
 
 ---
 
-## ⚡ 50 Điểm Ghi Nhớ Nhanh Nhất
+## ⚡ 54 Điểm Ghi Nhớ Nhanh Nhất
 
 **Chương 2 – Mạng:**
 1. Switch → **MAC** → Tầng 2
