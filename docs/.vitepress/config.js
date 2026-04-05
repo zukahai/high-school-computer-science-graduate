@@ -99,6 +99,7 @@ export default withMermaid({
           { text: '4.4 – DDL: Tạo và quản lý bảng', link: '/chuong-4/4.4-sql-ddl' },
           { text: '4.5 – DML: Thêm, sửa, xóa dữ liệu', link: '/chuong-4/4.5-sql-dml' },
           { text: '4.6 – SQL nâng cao: GROUP BY & JOIN', link: '/chuong-4/4.6-sql-nangcao' },
+          { text: '4.7 – Ôn tập Chương 4', link: '/chuong-4/4.7-on-tap' },
         ]
       },
       {

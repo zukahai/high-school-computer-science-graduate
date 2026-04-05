@@ -13,23 +13,23 @@ hero:
 features:
   - icon: 🌐
     title: Chương 2 – Mạng Máy Tính
-    details: Switch, Router, Modem, TCP/IP, LAN – giải thích từ đầu với ví dụ thực tế
+    details: Switch, Router, Modem, TCP/IP, OSI 7 tầng, LAN, bảo mật mạng, phân loại mạng
     link: /chuong-2/2.1-thiet-bi-mang
   - icon: 🤖
     title: Chương 3 – Trí Tuệ Nhân Tạo
-    details: AI là gì, NLP, nhận diện khuôn mặt, giới hạn của AI, AI trong giáo dục
+    details: AI, NLP, Machine Learning, Deep Learning, ứng dụng AI, đạo đức AI, AI và xã hội
     link: /chuong-3/3.1-ai-la-gi
   - icon: 🗄️
     title: Chương 4 – CSDL & SQL
-    details: Cơ sở dữ liệu, DBMS, khóa chính, khóa ngoại, SELECT/WHERE/JOIN
+    details: CSDL, DBMS, khóa chính/ngoại, SELECT/WHERE/JOIN, DDL, DML, GROUP BY, hàm tổng hợp
     link: /chuong-4/4.1-csld-dbms
   - icon: 🌍
     title: Chương 5 – HTML & CSS
-    details: Thẻ HTML cơ bản, bảng HTML, CSS font-family và border
+    details: HTML cơ bản, bảng, liên kết, hình ảnh, form, thẻ ngữ nghĩa, CSS cơ bản & nâng cao
     link: /chuong-5/5.1-html-co-ban
   - icon: ⚖️
     title: Chương 6 – Đạo Đức & Nghề IT
-    details: Văn hóa mạng, an toàn thông tin, hacker, nghề IT phần cứng & phần mềm
+    details: Văn hóa mạng, an toàn thông tin, luật ANTT, bản quyền phần mềm, quyền riêng tư, nghề IT
     link: /chuong-6/6.1-van-hoa-mang
   - icon: 🔍
     title: Tìm kiếm nhanh
@@ -51,11 +51,11 @@ Tài liệu này được thiết kế **đặc biệt cho học sinh mất gố
 
 ### 📚 Nội dung ôn thi gồm các chương
 
-1. **🌐 Chương 2 – Mạng máy tính & Internet** – Thiết bị mạng, TCP/IP, LAN
-2. **🤖 Chương 3 – Trí tuệ nhân tạo (AI)** – AI, NLP, giới hạn AI, AI & giáo dục
-3. **🗄️ Chương 4 – Cơ sở dữ liệu & SQL** – CSDL, DBMS, khóa, câu lệnh SQL
-4. **🌍 Chương 5 – HTML & CSS** – Tạo trang web cơ bản
-5. **⚖️ Chương 6 – Đạo đức & Nghề IT** – Văn hóa mạng, bảo mật, nghề IT
+1. **🌐 Chương 2 – Mạng máy tính & Internet** – Thiết bị mạng, TCP/IP, mô hình OSI, LAN, bảo mật, phân loại mạng
+2. **🤖 Chương 3 – Trí tuệ nhân tạo (AI)** – AI, NLP, Machine Learning, ứng dụng AI, đạo đức AI, AI & xã hội
+3. **🗄️ Chương 4 – Cơ sở dữ liệu & SQL** – CSDL, DBMS, khóa, SQL cơ bản, DDL, DML, SQL nâng cao
+4. **🌍 Chương 5 – HTML & CSS** – HTML cơ bản, bảng, liên kết, form, thẻ ngữ nghĩa, CSS cơ bản & nâng cao
+5. **⚖️ Chương 6 – Đạo đức & Nghề IT** – Văn hóa mạng, an toàn thông tin, luật ANTT, bản quyền, quyền riêng tư, nghề IT
 
 ### 💡 Cách sử dụng hiệu quả
 

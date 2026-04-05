@@ -239,3 +239,251 @@ Cách nhớ mật khẩu phức tạp: Dùng **passphrase** — lấy chữ đ�
 5. **Nghĩ AI đồng cảm thật sự** — AI chỉ bắt chước ngôn ngữ cảm xúc
 6. **Nhầm White Hat và Black Hat hacker**
 7. **Quên `PRIMARY KEY` phải Unique + Not Null cả hai điều kiện**
+8. **Dùng WHERE thay vì HAVING để lọc nhóm** — HAVING dùng sau GROUP BY
+9. **Quên WHERE trong UPDATE/DELETE** — gây ảnh hưởng toàn bộ bảng
+10. **Nhầm DROP TABLE và TRUNCATE TABLE** — DROP xóa cả cấu trúc, TRUNCATE chỉ xóa dữ liệu
+
+---
+
+## 🌐 Câu Hỏi Về Chương 2 – Mạng Nâng Cao
+
+### ❓ Mô hình OSI có 7 tầng — cần nhớ hết không? Nhớ thứ nào quan trọng nhất?
+
+**Trả lời:** Cần nhớ **tên và số thứ tự** của cả 7 tầng. Quan trọng nhất cho bài thi:
+- **Tầng 1 (Physical):** Bit, cáp vật lý, Hub
+- **Tầng 2 (Data Link):** Frame, MAC address, Switch
+- **Tầng 3 (Network):** Packet, IP address, Router
+- **Tầng 4 (Transport):** Segment, TCP/UDP
+- **Tầng 7 (Application):** HTTP, HTTPS, FTP, SMTP, DNS
+
+Mẹo nhớ từ tầng 7 xuống 1: **"A**ll **P**eople **S**eem **T**o **N**eed **D**ata **P**rocessing"
+
+---
+
+### ❓ POP3 và IMAP khác nhau thế nào?
+
+**Trả lời:** Cả hai đều dùng để **nhận email**, nhưng khác nhau cách xử lý:
+
+| | POP3 | IMAP |
+|---|---|---|
+| **Cách hoạt động** | **Tải về** máy, xóa khỏi server | **Đồng bộ** với server |
+| **Đọc offline** | Có | Hạn chế |
+| **Nhiều thiết bị** | Khó (email chỉ ở một thiết bị) | Dễ (đồng bộ mọi thiết bị) |
+| **Phù hợp** | Dùng 1 thiết bị cố định | Dùng nhiều thiết bị (hiện nay phổ biến hơn) |
+
+---
+
+### ❓ Tại sao HTTPS an toàn hơn HTTP?
+
+**Trả lời:** HTTPS = HTTP + **mã hóa SSL/TLS**. Khi dùng HTTPS:
+- Dữ liệu truyền đi được **mã hóa** → kẻ nghe lén không đọc được
+- Xác thực **danh tính máy chủ** qua certificate → biết đúng website thật
+- Chống tấn công **Man-in-the-Middle** (MITM)
+
+Nhận biết HTTPS: URL bắt đầu bằng `https://` và có biểu tượng ổ khóa 🔒 trên trình duyệt.
+
+---
+
+### ❓ Firewall là gì? Có giống với Antivirus không?
+
+**Trả lời:** **Không** — chúng khác nhau hoàn toàn:
+
+| | Firewall | Antivirus |
+|---|---|---|
+| **Chức năng** | Kiểm soát **lưu lượng mạng** vào/ra | Phát hiện và diệt **malware** |
+| **Hoạt động** | Chặn/cho phép kết nối theo quy tắc | Quét file, bộ nhớ tìm virus |
+| **Ví dụ** | Windows Firewall | Windows Defender, Kaspersky |
+
+Cần dùng **cả hai** để bảo vệ máy tính tốt nhất.
+
+---
+
+## 🤖 Câu Hỏi Về Chương 3 – AI Nâng Cao
+
+### ❓ Machine Learning và Deep Learning khác nhau thế nào?
+
+**Trả lời:**
+- **Machine Learning (ML)** = dạy máy học từ dữ liệu. ML là một nhánh của AI.
+- **Deep Learning (DL)** = ML dùng **mạng nơ-ron nhiều tầng** (deep neural networks). DL là một nhánh của ML.
+
+**Quan hệ:** AI ⊃ Machine Learning ⊃ Deep Learning
+
+Deep Learning cần **nhiều dữ liệu hơn** và **máy tính mạnh hơn**, nhưng cho kết quả tốt hơn với ảnh, âm thanh, ngôn ngữ.
+
+---
+
+### ❓ AI Bias (thiên kiến AI) là gì? Ví dụ thực tế?
+
+**Trả lời:** AI Bias xảy ra khi AI đưa ra quyết định **phân biệt đối xử** do dữ liệu huấn luyện có vấn đề.
+
+**Ví dụ thực tế:**
+- Hệ thống tuyển dụng AI học từ CV lịch sử của một công ty vốn chủ yếu tuyển nam → AI tự động ưu tiên hồ sơ nam hơn nữ
+- Hệ thống nhận diện khuôn mặt nhận diện kém hơn với người da màu vì dữ liệu huấn luyện chủ yếu là người da trắng
+
+**Nguyên tắc:** AI không "có ý định" phân biệt — nó chỉ phản chiếu những thiên kiến có trong dữ liệu.
+
+---
+
+### ❓ Deepfake là gì? Làm sao nhận biết?
+
+**Trả lời:** **Deepfake** là video/ảnh/âm thanh **giả mạo** người thật được tạo bằng AI (thường dùng kỹ thuật GAN — Generative Adversarial Network).
+
+**Cách nhận biết (chưa hoàn hảo):**
+- Chú ý vùng **mắt, răng, tóc** — thường bị lỗi nhất
+- Ánh sáng và bóng không tự nhiên
+- Môi không khớp hoàn toàn với âm thanh
+- Nền bị mờ hoặc biến dạng
+
+**Tác hại:** Lan truyền thông tin sai, thao túng dư luận, quấy rối cá nhân, lừa đảo tài chính.
+
+---
+
+## 🗄️ Câu Hỏi Về Chương 4 – SQL Nâng Cao
+
+### ❓ DDL và DML khác nhau thế nào?
+
+**Trả lời:**
+- **DDL (Data Definition Language)** = lệnh thay đổi **cấu trúc** của CSDL: `CREATE TABLE`, `ALTER TABLE`, `DROP TABLE`
+- **DML (Data Manipulation Language)** = lệnh thay đổi **dữ liệu** trong bảng: `INSERT`, `UPDATE`, `DELETE`
+
+Mẹo nhớ: DDL = *D*efinition (định nghĩa cấu trúc); DML = *M*anipulation (thao tác dữ liệu).
+
+---
+
+### ❓ GROUP BY và ORDER BY khác nhau thế nào?
+
+**Trả lời:**
+- **`GROUP BY`** = **gom nhóm** các hàng có cùng giá trị lại để tính hàm tổng hợp (COUNT, SUM, AVG...)
+- **`ORDER BY`** = **sắp xếp** kết quả theo một cột
+
+Ví dụ phân biệt:
+```sql
+-- ORDER BY: sắp xếp tên học sinh theo alphabet
+SELECT HoTen FROM HocSinh ORDER BY HoTen ASC;
+
+-- GROUP BY: đếm số học sinh trong từng lớp
+SELECT MaLop, COUNT(*) FROM HocSinh GROUP BY MaLop;
+```
+
+Hai lệnh này có thể **dùng cùng nhau**: GROUP BY trước, ORDER BY sau.
+
+---
+
+### ❓ Khi nào dùng LEFT JOIN thay vì INNER JOIN?
+
+**Trả lời:**
+- Dùng **INNER JOIN** khi chỉ muốn xem hàng **có đủ thông tin ở cả hai bảng**
+- Dùng **LEFT JOIN** khi muốn xem **tất cả hàng bảng trái**, kể cả chưa có dữ liệu bảng phải
+
+**Ví dụ thực tế:**
+```sql
+-- INNER JOIN: chỉ lấy học sinh ĐÃ CÓ điểm thi
+SELECT hs.HoTen, dt.Diem
+FROM HocSinh hs
+INNER JOIN DiemThi dt ON hs.MaHS = dt.MaHS;
+
+-- LEFT JOIN: lấy TẤT CẢ học sinh, kể cả chưa có điểm (Diem = NULL)
+SELECT hs.HoTen, dt.Diem
+FROM HocSinh hs
+LEFT JOIN DiemThi dt ON hs.MaHS = dt.MaHS;
+```
+
+---
+
+## 🌍 Câu Hỏi Về Chương 5 – HTML & CSS Nâng Cao
+
+### ❓ Thẻ ngữ nghĩa (semantic HTML) là gì? Có bắt buộc dùng không?
+
+**Trả lời:** Thẻ ngữ nghĩa là các thẻ HTML mô tả **ý nghĩa** của nội dung, thay vì chỉ định dạng hiển thị.
+
+| Không ngữ nghĩa | Có ngữ nghĩa |
+|---|---|
+| `<div id="header">` | `<header>` |
+| `<div id="nav">` | `<nav>` |
+| `<div id="content">` | `<main>` |
+| `<div id="footer">` | `<footer>` |
+
+**Lợi ích:**
+- Giúp **công cụ tìm kiếm** (Google) hiểu cấu trúc trang tốt hơn
+- Hỗ trợ **người khiếm thị** dùng screen reader
+- Code dễ đọc, dễ bảo trì hơn
+
+Trong bài thi, biết tên và ý nghĩa của các thẻ ngữ nghĩa phổ biến là đủ.
+
+---
+
+### ❓ Form HTML dùng để làm gì? Các loại input thường gặp?
+
+**Trả lời:** `<form>` là vùng nhập liệu để người dùng gửi dữ liệu đến server (đăng nhập, đăng ký, tìm kiếm...).
+
+**Các loại `<input>` hay gặp:**
+
+| `type` | Hiển thị | Dùng cho |
+|---|---|---|
+| `text` | Ô văn bản | Họ tên, địa chỉ |
+| `password` | Ô ẩn ký tự | Mật khẩu |
+| `email` | Ô email (có kiểm tra @) | Địa chỉ email |
+| `number` | Ô số | Tuổi, số lượng |
+| `checkbox` | Ô tick vuông | Nhiều lựa chọn |
+| `radio` | Nút tròn | Một lựa chọn duy nhất |
+| `submit` | Nút gửi form | Xác nhận gửi |
+
+---
+
+### ❓ Box model trong CSS là gì?
+
+**Trả lời:** Mọi phần tử HTML đều là một "hộp" gồm 4 lớp từ trong ra ngoài:
+
+```
+┌──────────────────────────────┐  ← margin (khoảng cách bên ngoài)
+│  ┌────────────────────────┐  │  ← border (đường viền)
+│  │  ┌──────────────────┐  │  │  ← padding (khoảng cách bên trong)
+│  │  │    CONTENT       │  │  │  ← content (nội dung thực)
+│  │  └──────────────────┘  │  │
+│  └────────────────────────┘  │
+└──────────────────────────────┘
+```
+
+- **`padding`** = khoảng cách từ nội dung đến đường viền
+- **`border`** = đường viền bao quanh
+- **`margin`** = khoảng cách từ đường viền đến phần tử kế tiếp
+
+---
+
+## ⚖️ Câu Hỏi Về Chương 6 – Luật & Quyền riêng tư
+
+### ❓ Open source có nghĩa là miễn phí không?
+
+**Trả lời:** **Không nhất thiết.** "Open source" (mã nguồn mở) có nghĩa là **mã nguồn được công khai**, bạn có thể xem và sửa. Nhưng:
+
+- Một số phần mềm open source miễn phí (Linux, Firefox)
+- Một số có phiên bản thương mại (Red Hat Enterprise Linux)
+- Giấy phép **GPL** yêu cầu phần mềm phái sinh cũng phải mã nguồn mở
+- Giấy phép **MIT** cho phép dùng trong dự án thương mại mà không cần chia sẻ lại
+
+**Ghi nhớ:** Open source ≠ Free software ≠ Freeware
+
+---
+
+### ❓ Dữ liệu cá nhân là gì? Tại sao cần bảo vệ?
+
+**Trả lời:** Dữ liệu cá nhân là **thông tin có thể nhận dạng một người cụ thể**, bao gồm:
+- **Trực tiếp:** Họ tên, CCCD, số điện thoại, email, ảnh mặt, vân tay
+- **Gián tiếp:** Địa chỉ IP, vị trí GPS, lịch sử duyệt web, hành vi mua sắm
+
+**Lý do bảo vệ:**
+- Tránh bị **lừa đảo** (dùng thông tin để giả mạo, vay tiền...)
+- Tránh bị **theo dõi** và lạm dụng bởi công ty quảng cáo
+- Đây là **quyền cơ bản** của mỗi người theo quy định pháp luật (GDPR tại EU, Luật ANTT Việt Nam)
+
+---
+
+### ❓ Quy tắc 20-20-20 là gì? Tại sao cần áp dụng?
+
+**Trả lời:** Quy tắc **20-20-20** giúp giảm mỏi mắt khi dùng màn hình:
+- Cứ mỗi **20 phút** nhìn màn hình
+- Hãy nhìn vật cách xa **20 feet** (~6 mét)
+- Trong **20 giây**
+
+**Tại sao cần?** Mắt căng thẳng khi nhìn gần lâu → khô mắt, đau đầu, giảm thị lực dài hạn. Quy tắc này giúp mắt nghỉ ngơi và điều tiết lại.
+
